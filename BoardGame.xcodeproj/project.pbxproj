@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1423B0F027B80B3A004555EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423B0EF27B80B3A004555EE /* AppDelegate.swift */; };
 		1423B0F227B80B3A004555EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423B0F127B80B3A004555EE /* SceneDelegate.swift */; };
-		1423B0F427B80B3A004555EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423B0F327B80B3A004555EE /* ViewController.swift */; };
 		1423B0F727B80B3A004555EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1423B0F527B80B3A004555EE /* Main.storyboard */; };
 		1423B0F927B80B3A004555EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1423B0F827B80B3A004555EE /* Assets.xcassets */; };
 		1423B0FC27B80B3A004555EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1423B0FA27B80B3A004555EE /* LaunchScreen.storyboard */; };
+		14294CE027B840EA00C31CDC /* BoardGameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294CDF27B840EA00C31CDC /* BoardGameList.swift */; };
+		14294CE427B8437D00C31CDC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294CE327B8437D00C31CDC /* DataManager.swift */; };
+		14294CE627B8576700C31CDC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294CE527B8576700C31CDC /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1423B0EC27B80B3A004555EE /* BoardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1423B0EF27B80B3A004555EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1423B0F127B80B3A004555EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1423B0F327B80B3A004555EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1423B0F627B80B3A004555EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1423B0F827B80B3A004555EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1423B0FB27B80B3A004555EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1423B0FD27B80B3A004555EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14294CDF27B840EA00C31CDC /* BoardGameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameList.swift; sourceTree = "<group>"; };
+		14294CE327B8437D00C31CDC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		14294CE527B8576700C31CDC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				1423B0EF27B80B3A004555EE /* AppDelegate.swift */,
 				1423B0F127B80B3A004555EE /* SceneDelegate.swift */,
-				1423B0F327B80B3A004555EE /* ViewController.swift */,
 				1423B0F527B80B3A004555EE /* Main.storyboard */,
+				14294CE527B8576700C31CDC /* DetailViewController.swift */,
+				14294CE327B8437D00C31CDC /* DataManager.swift */,
+				14294CDF27B840EA00C31CDC /* BoardGameList.swift */,
 				1423B0F827B80B3A004555EE /* Assets.xcassets */,
 				1423B0FA27B80B3A004555EE /* LaunchScreen.storyboard */,
 				1423B0FD27B80B3A004555EE /* Info.plist */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1423B0F427B80B3A004555EE /* ViewController.swift in Sources */,
+				14294CE027B840EA00C31CDC /* BoardGameList.swift in Sources */,
+				14294CE427B8437D00C31CDC /* DataManager.swift in Sources */,
+				14294CE627B8576700C31CDC /* DetailViewController.swift in Sources */,
 				1423B0F027B80B3A004555EE /* AppDelegate.swift in Sources */,
 				1423B0F227B80B3A004555EE /* SceneDelegate.swift in Sources */,
 			);
@@ -295,8 +303,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,8 +333,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
